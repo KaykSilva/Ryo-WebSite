@@ -13,8 +13,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import "./Navbar.css";
-import getUser from "../../api/get/getUser";
+import "./navbar.css";
+import getUser from "../../api/get/getUSer";
 import { useAuth } from "../../contexts/authProvider";
 
 const pages = ["Daily", "Comandos", "Suporte"];
