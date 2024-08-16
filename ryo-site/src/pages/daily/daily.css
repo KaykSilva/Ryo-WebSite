@@ -1,0 +1,11 @@
+.daily-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.daily-button img {
+    width: 400px;
+    height: 400;
+}

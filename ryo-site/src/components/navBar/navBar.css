@@ -1,0 +1,18 @@
+.logoImage {
+  margin: 5px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.span {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.spanName {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 5px;
+  color: white;
+}
