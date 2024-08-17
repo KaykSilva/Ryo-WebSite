@@ -27,7 +27,6 @@ const GetDaily = () => {
   const handleGetDaily = async () => {
     const userInfo = localStorage.getItem(userInfo);
     const discordId = userInfo.id
-    console.log(discordId)
     const forms = {
       amount: randomNumber,
     };
