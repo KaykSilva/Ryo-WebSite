@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = () => {
-    const url = `${api}/auth/discord`;
+    const url = `https://odontoease.com.br:3000/auth/discord`;
     window.location.href = url;
   };
 
