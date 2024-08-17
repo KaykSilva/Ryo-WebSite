@@ -25,14 +25,15 @@ const GetDaily = () => {
   };
 
   const handleGetDaily = async () => {
-
     const forms = {
       amount: randomNumber,
     };
 
     try {
-      const userInfo = localStorage.getItem(userInfo);
-      const discordId = userInfo.id
+      const userInfoString = localStorage.getItem("userInfo");
+      const userInfo = JSON.parse(userInfoString);
+      const discordId = userInfo.id;
+
       const response = await getDaily(discordId, forms);
       console.log("resposta", response.status);
 
