@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = () => {
-    const url = `http://localhost:3000/auth/discord`;
+    const url = `http://217.196.61.91:3000/auth/discord`;
     window.location.href = url;
   };
 
