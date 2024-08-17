@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
 }
+.span-login{
+  display: flex;
+  text-align: center;
+}
 .title {
   margin-top: 10rem;
 }

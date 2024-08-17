@@ -25,7 +25,7 @@ const LoginButton = () => {
       <div className="button-login-container">
         <div className="title">
           <h1>Recompensa diária.</h1>
-          <span>
+          <span className="span-login">
             Você precisa logar com sua conta do discord para receber sua
             recompensa
           </span>
