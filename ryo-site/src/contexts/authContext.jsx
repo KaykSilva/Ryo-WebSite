@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import getUser from "../api/get/getUSer.js";
+import api from "../api/api.js";
 
 const AuthContext = createContext();
 
@@ -7,7 +8,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = () => {
-    const url = `http://217.196.61.91:3000/auth/discord`;
+    const url = `${api}/auth/discord`;
     window.location.href = url;
   };
 
