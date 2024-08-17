@@ -25,7 +25,9 @@ const GetDaily = () => {
   };
 
   const handleGetDaily = async () => {
-    const discordId = "783914991006253087"; // Certifique-se de obter o ID do usuário de forma correta
+    const userInfo = localStorage.getItem(userInfo);
+    const discordId = userInfo.id
+    console.log(discordId)
     const forms = {
       amount: randomNumber,
     };
