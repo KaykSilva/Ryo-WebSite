@@ -17,7 +17,6 @@ const Daily = () => {
       <div className="daily-container">
         <div className="daily-button">
           <LoginButton />
-      
           {user && (
             <GetDaily/>
           )}
