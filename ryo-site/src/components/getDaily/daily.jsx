@@ -38,7 +38,7 @@ const GetDaily = () => {
       console.log("resposta", response.status);
 
       if (response.status === 200) {
-        setMessage(`Você ganhou ${response.data.balance} RyoCoins!`);
+        setMessage(`Você ganhou ${response.data.amount} RyoCoins!`);
         setGifStatus(pouso);
       } else if (response.status === 201) {
         setMessage("Você já resgatou sua recompensa diária.");
