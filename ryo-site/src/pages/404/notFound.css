@@ -1,0 +1,18 @@
+.notFound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notFound-container h1{
+    display: flex;
+    font-size: 150px;
+    color: #3A89FF;
+}
+.notFound-container span{
+    display: flex;
+    font-size: 40px;
+    color: #3A89FF;
+}
+.notFound-container img{
+padding-top: 15px;
+}
