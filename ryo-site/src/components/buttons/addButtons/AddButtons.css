@@ -1,0 +1,62 @@
+.addBot-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões sejam distribuídos em linhas */
+  justify-content: center;
+  gap: 15px; /* Espaço entre os botões */
+}
+
+.addServer-btn,
+.manageServer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 35%; /* Define a largura dos botões para ocupar 45% do contêiner */
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Estilizações específicas para os botões */
+.addServer-btn {
+  color: #000;
+  background-color: #fff;
+}
+
+.addServer-btn:hover {
+  background-color: #3a89ff;
+  box-shadow: 0px 15px 20px rgba(46, 119, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.addServer-btn:active {
+  transform: translateY(-1px);
+}
+
+.manageServer-btn {
+  color: #fff;
+  background-color: #3a89ff;
+}
+
+.manageServer-btn:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(46, 119, 229, 0.4);
+  color: #000;
+  transform: translateY(-7px);
+}
+
+.manageServer-btn:active {
+  transform: translateY(-1px);
+}
+
+.dcbutton {
+  margin-right: 5px;
+}

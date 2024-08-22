@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -12,10 +11,15 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 import "./navBares.css";
 import getUser from "../../api/get/getUSer";
 
-const pages = ["Daily", "Comandos", "Suporte"];
+const pages = [
+  { name: "Daily", path: "/daily" },
+  { name: "Comandos", path: "/comandos" },
+  { name: "Suporte", path: "/suporte" },
+];
 const settings = ["Perfil", "Servidores", "Sair"];
 const defaultAvatarUrl = "https://i.waifu.pics/EBLUY7P.png";
 
@@ -70,7 +74,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -114,8 +118,10 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Typography textAlign="center">{page.name}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -142,11 +148,12 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.name}
+                component={Link}
+                to={page.path}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                <span className="span">{page}</span>
+                <span className="span">{page.name}</span>
               </Button>
             ))}
           </Box>

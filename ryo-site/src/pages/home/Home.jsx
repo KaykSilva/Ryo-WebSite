@@ -2,8 +2,7 @@ import React from "react";
 import "./Home.css";
 import ResponsiveAppBar from "../../components/navBar/navBar";
 import RyoImage from "../../assets/ryo/RyoImage.png";
-import AddBot from "../../components/buttons/AddButtons";
-import AddButtons from "../../components/buttons/AddButtons";
+import AddButtons from "../../components/buttons/addButtons/AddButtons";
 const Home = () => {
   return (
     <div className="home-container">
@@ -19,8 +18,10 @@ const Home = () => {
           />
         </div>
         <div className="add-btns">
-          <h1>Adicione ao seu servidor</h1>
+          <h1>Desperte o poder do seu servidor!</h1>
+          <span>Anime, jogos, economia e mais!</span>
           <AddButtons />
+          
         </div>
       </section>
       <section className="skills"></section>
