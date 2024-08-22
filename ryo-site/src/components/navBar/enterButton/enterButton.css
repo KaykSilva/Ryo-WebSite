@@ -1,0 +1,14 @@
+.enterButton {
+    background-color: transparent;
+    border: 0px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.enterButton:hover {
+    cursor: pointer;
+}

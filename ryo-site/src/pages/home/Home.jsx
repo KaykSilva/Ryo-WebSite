@@ -3,6 +3,8 @@ import "./Home.css";
 import ResponsiveAppBar from "../../components/navBar/navBar";
 import RyoImage from "../../assets/ryo/RyoImage.png";
 import AddButtons from "../../components/buttons/addButtons/AddButtons";
+import { BiChevronsDown } from "react-icons/bi";
+
 const Home = () => {
   return (
     <div className="home-container">
@@ -21,9 +23,9 @@ const Home = () => {
           <h1>Desperte o poder do seu servidor!</h1>
           <span>Anime, jogos, economia e mais!</span>
           <AddButtons />
-          
         </div>
       </section>
+      <BiChevronsDown className="arrowDown" size={50}/>
       <section className="skills"></section>
     </div>
   );

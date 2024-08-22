@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import "./navBares.css";
 import getUser from "../../api/get/getUSer";
+import EnterButton from "./enterButton/EnterButton";
 
 const pages = [
   { name: "Daily", path: "/daily" },
@@ -160,6 +161,8 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
+              
+           {user && <EnterButton/> } 
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="User Avatar"
