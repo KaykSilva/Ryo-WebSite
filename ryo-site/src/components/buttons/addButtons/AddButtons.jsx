@@ -47,7 +47,7 @@ const AddButtons = () => {
         onClick={handleEnterToServer}
       >
         <TbDoorEnter  className="dcbutton" size={20} />
-        junte-se a nosso servidor!
+        junte-se ao nosso servidor!
       </button>
 
       
